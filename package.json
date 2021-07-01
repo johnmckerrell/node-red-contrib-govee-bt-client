@@ -1,0 +1,32 @@
+{
+  "name": "node-red-contrib-govee-bt-client",
+  "version": "1.0.0",
+  "description": "Using noble.js, via govee-bt-client, continuously scans advertisements from Govee BLE Thermometer & Hygrometer devices.",
+  "author": {
+    "name": "John McKerrell",
+    "email": "john@mckerrell.net"
+  },
+  "keywords": [
+    "ble",
+    "bluetooth",
+    "nodered",
+    "node-red",
+    "sensor",
+    "temperature",
+    "humidity",
+    "govee"
+  ],
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "govee-bt-client": "govee-bt-client.js"
+    }
+  },
+  "dependencies": {
+    "govee-bt-client":  "^1.0.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnmckerrell/node-red-contrib-govee-bt-client.git"
+  }
+}

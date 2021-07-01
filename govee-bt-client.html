@@ -1,0 +1,26 @@
+<script type="text/javascript">
+    RED.nodes.registerType('Govee Device', {
+        category: 'BLE',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" }
+        },
+        inputs: 0,
+        outputs: 1,
+        icon: "bluetooth.png",
+        label: function () {
+            return this.name || "Govee Device";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="Govee Device">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="BLE Scan">
+    <p>Using noble.js, via govee-bt-client, continuously scans advertisements from Govee BLE Thermometer & Hygrometer devices.</p>
+</script>
